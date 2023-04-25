@@ -1,0 +1,195 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 22, 2022 at 06:11 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.5
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `onlinefitnesstrainer`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contactdetails`
+--
+
+CREATE TABLE `contactdetails` (
+  `id` int(100) NOT NULL,
+  `GuestName` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `Message` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contactdetails`
+--
+
+INSERT INTO `contactdetails` (`id`, `GuestName`, `email`, `Message`) VALUES
+(105, 'Thilina S', 'dads@dfa.cv', 'i neww to know more abot that trainer mr sansra'),
+(106, 'Rahubadda', 'rahubadda@gmail.com', 'bla bla bal'),
+(108, 'Rahubaddasss', 'rahubadaada@gmail.com', 'newbw new'),
+(109, 'Rahubaddasssssss', 'rahubadaasda@gmail.com', 'newbw newas'),
+(110, 'kisiri', 'basu@s.sd', 'kasirikasirk'),
+(111, 'sakila', 'sakila.atapattu@gmail.com', 'hi');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `paymentdetails`
+--
+
+CREATE TABLE `paymentdetails` (
+  `MemberID` int(3) NOT NULL,
+  `UserName` varchar(50) NOT NULL,
+  `CardNo` varchar(16) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `paymentdetails`
+--
+
+INSERT INTO `paymentdetails` (`MemberID`, `UserName`, `CardNo`) VALUES
+(1, 'chathum', '123456789');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registration`
+--
+
+CREATE TABLE `registration` (
+  `MemberID` int(3) NOT NULL,
+  `nic` bigint(12) NOT NULL,
+  `firstname` varchar(20) NOT NULL,
+  `lastname` varchar(20) NOT NULL,
+  `gender` varchar(6) NOT NULL,
+  `age` int(2) NOT NULL,
+  `height` varchar(5) NOT NULL,
+  `weight` varchar(5) NOT NULL,
+  `dob` date NOT NULL,
+  `address` text NOT NULL,
+  `mobile` bigint(10) NOT NULL,
+  `packages` varchar(50) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `password` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `registration`
+--
+
+INSERT INTO `registration` (`MemberID`, `nic`, `firstname`, `lastname`, `gender`, `age`, `height`, `weight`, `dob`, `address`, `mobile`, `packages`, `email`, `password`) VALUES
+(1, 200116404223, 'sakila', 'athapaththu', 'male', 21, '5\'8', '50kg', '2001-06-12', 'pothuhera,kurunegala', 714782241, 'Basic plan for 3 months', 'sakila.atapattu@gmail.com', 'sakila1A'),
+(2, 200115404215, 'sithumi', 'gunarathne', 'female', 22, '5\'6', '50kg', '2001-04-13', 'kaduwela,malabe', 716724148, 'Basic plan for 3 months', 'sithumigunarathne@gmail.com', 'sithumi12Z'),
+(3, 200067504029, 'isiri', 'rahubedda', 'female', 22, '5\'', '53kg', '2000-02-23', 'wijayarama,maharagama', 701263969, '6 months with Nutrition plan', 'isiripaboda@gmail.com', 'isiri1PA'),
+(4, 200055701168, 'thilina', 'sadamal', 'male', 22, '5\'7', '55kg', '2000-05-23', 'Horana.', 772021034, 'Basic plan for 3 months', 'thilinasadamal@gmail.com', 'sadamal0T'),
+(5, 200117673378, 'chathum', 'dulara', 'male', 21, '5\'9', '55kg', '2001-03-21', 'chilaw', 717226025, '1 Year plan with discount', 'chathumdulara@gmail.com', 'chathumA1'),
+(9, 200000000000, 'oneli', 'wijayarupa', 'female', 22, '5\'5', '75kg', '2000-02-14', 'Ragama', 715678954, 'Basic plan for 3 months', 'oneli@gmail.com', 'oneliA12'),
+(10, 200067896754, 'sachini', 'mendis', 'female', 22, '5\'7', '65kg', '2000-04-10', 'galle', 117687564, '6 months with Nutrition plan', 'sachini.mendis@gmail.com', 'sachini1S');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `suportdetails`
+--
+
+CREATE TABLE `suportdetails` (
+  `id` int(100) NOT NULL,
+  `UserName` varchar(100) NOT NULL,
+  `UserEmail` varchar(50) NOT NULL,
+  `ReqeustType` varchar(100) NOT NULL,
+  `UserMessage` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `suportdetails`
+--
+
+INSERT INTO `suportdetails` (`id`, `UserName`, `UserEmail`, `ReqeustType`, `UserMessage`) VALUES
+(69, 'Thilina Sandamal De Silva', 'thilinakavirathne@gmail.com', 'About-Packages', 'i want to clearfry my vip package.'),
+(91, 'Thilina Sandamal De Silva', 'thilinakavirathne@gmail.com', 'About-Trainer', 'thilina'),
+(92, 'Thilina Sandamal De Silva', 'thilinakavirathne@gmail.com', 'About-Trainer', 'thilina'),
+(93, 'Thilina Sandamal De SilvaSS', 'adf@sdf.hn', 'PayementIssue', 'zdvcz'),
+(94, 'Thilina Sandamal De SilvaSS', 'adf@sdf.hn', 'PayementIssue', 'zdvcz'),
+(95, 'Thilina Sandamal De SilvaSS', 'adf@sdf.hn', 'PayementIssue', 'sakil sakila'),
+(96, 'Thilina Sandamal De SilvaSS', 'adf@sdf.hn', 'PayementIssue', 'sakil sakila'),
+(97, 'NEWvaSS', 'adf@sdf.hn', 'About-Trainer', 'NEW KAsila'),
+(98, 'NEWvaSS', 'adf@sdf.hn', 'About-Trainer', 'NEW KAsila'),
+(99, 'wowowowow', 'adf@sdf.hn', 'About-Trainer', 'wowowoow'),
+(100, 'sakila', 'sakila.atapattu@gmail.com', 'PayementIssue', 'ok');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `contactdetails`
+--
+ALTER TABLE `contactdetails`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `paymentdetails`
+--
+ALTER TABLE `paymentdetails`
+  ADD PRIMARY KEY (`MemberID`);
+
+--
+-- Indexes for table `registration`
+--
+ALTER TABLE `registration`
+  ADD PRIMARY KEY (`MemberID`),
+  ADD UNIQUE KEY `nic` (`nic`);
+
+--
+-- Indexes for table `suportdetails`
+--
+ALTER TABLE `suportdetails`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `contactdetails`
+--
+ALTER TABLE `contactdetails`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
+
+--
+-- AUTO_INCREMENT for table `paymentdetails`
+--
+ALTER TABLE `paymentdetails`
+  MODIFY `MemberID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `registration`
+--
+ALTER TABLE `registration`
+  MODIFY `MemberID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `suportdetails`
+--
+ALTER TABLE `suportdetails`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
