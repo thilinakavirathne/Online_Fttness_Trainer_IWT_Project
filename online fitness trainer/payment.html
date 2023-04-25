@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Packages </title>
+	<link rel="stylesheet" href="css/pheaderFooter.css"/> <!--Header & Footer--->
+	<link rel="stylesheet" href="css/payment.css"/> <!--Payment gateway--->
+	
+</head>
+<body>
+
+	<!--Header-->
+	<div id="bcolor">
+		
+		<table  width="100%">
+			<tr>
+				<td>	<img src="images/logo.jpg" class="logo" alt="*The logo of our Online Fitness Trainer*" /></a></td>
+				<td class="col1"><h1 class="title">Rota Fitness Center</h1></td>
+
+				<td class="col2" >
+						
+						<a href="login.html">
+									<button class="btn1" > Login</button></a><a href="php/useracc.php"><img src="images/Acc.png" id="accp" align="center" alt="*The logo of login*" /></a>
+
+					
+				</td>
+			</tr>
+	
+		</table>
+	
+	</div>			
+<!----Header close---->
+		
+
+<!--Navigation bar-->
+<ul class="menu">
+		<li class="menu"> <a href="Home.html"> Home</a> </li>
+		<li class="menu"> <a href="Packages.html"> Packages</a></li>
+		<li class="menu"> <a href="Membership.html"> Membership</a></li>
+		<li class="menu"> <a href="FindUs.html"> Find us</a></li>
+		<li class="menu"> <a href="AboutUs.html"> About Us</a></li>
+	</ul>
+<hr id="test"/>
+ <!--Navigation bar Close-->
+
+
+<!--Page Content-->
+<div class="mainscreen">
+    <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg"  class="bgimg " alt="">--> 
+      <div class="card">
+        <div class="leftside">
+          <img
+            src="https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?t=st=1652847811~exp=1652848411~hmac=8a6db319b11858e511cf4978ea7ccc543719f081b7291a07af3d6c3385300450&w=740"
+            class="product"
+            alt="vehicle"
+          />
+        </div>
+        <div class="rightside">
+          <form action= "./php/payment.php" method="post" >
+            <h2>Payment Information</h2>
+            <p>Cardholder Name</p>
+            <input type="text" class="inputbox" name="UserName" required />
+            <p>Card Number</p>
+            <input type="number" class="inputbox" name="CardNo" id="card_number" required />
+
+            <p>Card Type</p>
+            <select class="inputbox" id="card_type" required>
+              <option value="">--Select a Card Type--</option>
+              <option value="Visa">Visa</option>
+              <option value="RuPay">RuPay</option>
+              <option value="MasterCard">MasterCard</option>
+            </select>
+<div class="expcvv">
+
+            <p class="expcvv_text">Expiry</p>
+            <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+
+            <p class="expcvv_text2">CVV</p>
+            <input type="password" class="inputbox" name="cvv" id="cvv" required />
+        </div>
+		<input type="checkbox" id="confirm" name="Payment" value="Payment">
+		<label for="vehicle1"> confirm payment details</label><br>
+            <p></p>
+            <input type="submit" value="Pay Now" name="submit" class="button">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<!--Page Content End-->
+
+<!--Footer-->
+<footer class="footer">
+	
+	<table  border="0px" style="width:100%">	
+			
+
+			<tr>
+  				<td><img src ="images/net.png" alt="fbicon" class="foot-icon"> Visit :www.rotafitness.lk<br>
+  					<img src ="images/call.png" alt="fbicon" class="foot-icon">Call Us : +11 254 4587<br>
+  					<img src ="images/Location.png" alt="fbicon" class="foot-icon">Location : <a href="https://goo.gl/maps/8B2rGMJgdZBQkEYG6/"> Kandy Rd,Malabe</a> <br>
+
+  				</td>
+
+
+					<td class="col1"> 
+							©All Rights Reserved.© <br>
+  	       					Rota Fitness Pvt Ltd<br>
+  							<a href="rotafitz@gmail.com">rotafitz@gmail.com</a>
+  							
+  					</td>
+
+			<td>	
+				<div id="textAlign">
+  					<p class="foots">Follow Us On  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</p>
+					<a href="https://www.facebook.com/sliit.lk/"><img src ="images/fbb.png" alt="fbicon"  width="40" height="40" > </a>
+					<a href="https://twitter.com/SLIITComputing?t=SnT3hK0oX-LJ234NYfmMzw&s=09"><img src ="images/tweeticon.png" alt="teewticon"  width="40" height="40" ></a>
+					<a href="https://instagram.com/sliit.life?igshid=YmMyMTA2M2Y="><img src ="images/insticon.png" alt="yticon"  width="45" height="40" > </a>
+				</div>
+			</td>
+		
+
+		</tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+
+
+</table>
+
+</footer>
+<!--Footer close-->
+
+</body>
+
+
+</html>

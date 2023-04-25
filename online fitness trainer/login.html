@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login </title>
+	<link rel="stylesheet" href="css/pheaderFooter.css"/>
+	
+	<link rel="stylesheet" href="css/LogReg.css"/>  
+	
+
+
+	
+</head>
+<body>
+
+	<!--Header-->
+	<div id="bcolor">
+		
+		<table  width="100%">
+			<tr>
+				<td>	<img src="images/logo.jpg" class="logo" alt="*The logo of our Online Fitness Trainer*" /></a></td>
+				<td class="col1"><h1 class="title">Rota Fitness Center</h1></td>
+
+				<td class="col2" >
+						
+						<a href="login.html">
+									<button class="btn1" > Login</button></a><a href="php/useracc.php"><img src="images/Acc.png" id="accp" align="center" alt="*The logo of login*" /></a>
+
+					
+				</td>
+			</tr>
+	
+		</table>
+	
+	</div>		
+		
+
+<!--Navigation bar-->
+<ul class="menu">
+		<li class="menu"> <a href="Home.html"> Home</a> </li>
+		<li class="menu"> <a href="Packages.html"> Packages</a></li>
+		<li class="menu"> <a href="Membership.html"> Membership</a></li>
+		<li class="menu"> <a href="FindUs.html"> Find us</a></li>
+		<li class="menu"> <a href="AboutUs.html"> About Us</a></li>
+	</ul>
+<hr id="test"/>
+
+
+<div class="hero">
+		<div class="form-box">
+			<center><h2 class="Login-text">Login</h2></center>
+			
+			<div class="button-box">
+
+				<div id="btnl"></div>
+				 <button type="button" class="tog-btn" onclick="login()">Log In</button>
+				 <button type="button" class="tog-btn" onclick="register()">Froget Password</button>
+			</div>
+
+			<div class="social-btn">
+			<img src="images/fblg.png">
+			<img src="images/twlg.png">
+			<img src="images/gglg.png">
+			</div>
+		 <!------------------------ Login Form ------------------------->
+			<form id="login" action="./php/verify.php" method="post" class="input-fill">
+					<input type="text" class="input-field" name="username" placeholder="Username" required>
+					<input type="text" class="input-field" name="password" placeholder="Password" required>
+					<input type="checkbox" class="checkbx" name="remPassword"><span>Remember Password</span>
+					<button type="submit" class="submit-btn" name="login">Log in </button>
+			
+			</form>
+			
+			<!------------------------ Froget Password Form ------------------------->
+			<form id="register" class="input-fill" action="./php/FrogetPassword.php" method="post"> <br>
+					<input type="text" class="input-field" name="username" placeholder="Enter your email or username" required>
+					<input type="text" class="input-field" name="password" placeholder="New Password" required>
+					
+					
+					<input type="checkbox" class="checkbx" name="changePassConfirm"/><span>I need to change my password </span>
+					<button type="submit" class="submit-btn" name="frogotPassword">Submit</button>
+
+
+			
+			</form>
+
+		</div>
+	</div>
+
+<script>
+	
+	var x = document.getElementById("login");
+	var y = document.getElementById("register");
+	var z = document.getElementById("btnl");
+
+		function login(){
+		x.style.left= "50px";
+		y.style.left= "450px";
+		z.style.left= "0px";
+
+	}
+
+	function register(){
+		x.style.left= "-600px";
+		y.style.left= "50px";
+		z.style.left= "110px";
+
+	}
+
+
+
+</script>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<!--footer-->
+
+<footer class="footer">
+	
+	<table  style="width:100%">	
+			
+
+			<tr>
+  				<td><img src ="images/net.png" alt="fbicon" class="foot-icon"> Visit :www.rotafitness.lk<br>
+  					<img src ="images/call.png" alt="fbicon" class="foot-icon">Call Us : +11 254 4587<br>
+  					<img src ="images/Location.png" alt="fbicon" class="foot-icon">Location : <a href="https://goo.gl/maps/8B2rGMJgdZBQkEYG6/"> Kandy Rd,Malabe</a> <br>
+
+  				</td>
+
+
+
+				<td class="col4">
+							© All Rights Reserved.<br>
+  	       					Rota Fitz Pvt Ltd<br>
+  							<a href="rotafitz@gmail.com">rotafitz@gmail.com</a>
+  				</td>
+
+			<td >	
+				<div id="textAlign">
+  					<p class="foots">Follow Us On  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</p>
+					<a href="https://www.facebook.com/sliit.lk/"><img src ="images/fbb.png" alt="fbicon"  width="40" height="40" > </a>
+					<a href="https://twitter.com/SLIITComputing?t=SnT3hK0oX-LJ234NYfmMzw&s=09"><img src ="images/tweeticon.png" alt="teewticon"  width="40" height="40" ></a>
+					<a href="https://instagram.com/sliit.life?igshid=YmMyMTA2M2Y="><img src ="images/insticon.png" alt="yticon"  width="45" height="40" > </a>
+				</div>
+			</td>
+		
+
+		</tr>
+		
+		
+
+
+</table>
+
+</footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> FindUs </title>
+	<link rel="stylesheet" href="css/pheaderFooter.css"/> <!--Header & Footer--->
+	<link rel="stylesheet" href="css/Contact_us.css">
+</head>
+<body>
+
+	
+	<!--Header-->
+	<div id="bcolor">
+		
+		<table  width="100%">
+			<tr>
+				<td>	<img src="images/logo.jpg" class="logo" alt="*The logo of our Online Fitness Trainer*" /></a></td>
+				<td class="col1"><h1 class="title">Rota Fitness Center</h1></td>
+
+				<td class="col2" >
+						
+						<a href="login.html">
+									<button class="btn1" > Login</button></a><a href="php/useracc.php"><img src="images/Acc.png" id="accp" align="center" alt="*The logo of login*" /></a>
+
+					
+				</td>
+			</tr>
+	
+		</table>
+	
+	</div>				
+<!----Header close---->
+		
+
+<!--Navigation bar-->
+<ul class="menu">
+		<li class="menu"> <a href="Home.html"> Home</a> </li>
+		<li class="menu"> <a href="Packages.html"> Packages</a></li>
+		<li class="menu"> <a href="Membership.html"> Membership</a></li>
+		<li class="menu"> <a href="FindUs.html"> Find us</a></li>
+		<li class="menu"> <a href="AboutUs.html"> About Us</a></li>
+	</ul>
+<hr id="test"/>
+ <!--Navigation bar Close-->
+
+<center><h3> Find Us</h3> </center>
+
+	<!--Contact us Details-Left-Side-->
+<div class="Background-Contact">
+	<div class="Contact-detail">
+	
+	<h3><center>Contact Us</center></h3>
+		<ul class="Contact-Content"> 
+			<li>Contact Us:</li>
+				<ul>011-2355611</ul><br>
+			<li>Email Us:</li>
+				<ul>rotafit@gmail.com</ul><br>
+			<li>Head Office:</li>
+				<ul> Kandy Rd, <br> Malabe ,Sri Lanka</ul>
+		</ul>
+
+		<div class="social-btn">
+			<img src="images/fblg.png">
+			<img src="images/twlg.png">
+			<img src="images/gglg.png">
+		</div>	
+	</div>
+</div>
+
+				 <!----Top Selection Buttons Of Form---->
+				<div id="btnl">
+				<center>
+						<button  type="button" class="Contact-btn" onclick="ContactUs()">Contact Us</button> 
+				 		<button class="Contact-btn" onclick="Help_Suport()">Help & Suport</button>
+				 	</center>
+				 </div>
+
+		  <!----------------------------Contact-Us Form-Start---------------------------->
+<div class="Contact-detail2" id="ContactUs" >	
+		
+		<fieldset><legend > <font size="5px">Contact Us</font> </legend>
+		   	<form action="./php/config1.php"  method="post" >
+				<div class=""><label >Your Name : </label>
+    			<input type="text"  name="GuestName" placeholder="Your name.." required="">
+    		</div> 
+    		<br>
+
+
+    		<div class=""><label>Your Email : </label> </div>
+    		<input type="email"  name="email" placeholder="Your Email.." required="">
+			<br><br>
+
+    		<div class=""><label >Your Massege : </label><br></div>
+   			<textarea  name="Message" placeholder="Write something.." style="height:80px" "width:560px"></textarea>
+
+   	</fieldset>
+
+   			<input class="submit" type="submit"  name="Submit">
+   	 	
+   	 	</form>
+
+</div>
+
+<br>
+		 <!-------------------------------Contact-Us Form End---------------------------------->
+
+<!------------------------------------Help & Suport Form Start----------------------------------------------->
+
+<div class="Contact-detail2" id="Help_Suport">
+	<fieldset><legend > <font size="5px">Help & Suport</font> </legend>
+		<form action= "./php/SuportDetails.php" method="post" >
+	   		<div class=""><label >Your Name : </label>
+    			<input type="text"  name="UserName" placeholder="Your name.." required="">
+    		</div>     		
+	   		<div class=""><label>Your Username : </label> </div>
+    		<input type="email"  name="UserEmail" placeholder="Your registerd e-mail.." required="">
+			
+		<!--Dropdown-Menu-->	
+		<label for="Reqest">Select Your Reqest/Enqury Type</label>
+		<select name="ReqeustType" required="">
+			<option value="empty">--Select--</option>
+  	  		<option value="PayementIssue">About Payement Issues</option>
+  			<option value="About-Trainer">About Trainer</option>
+  			<option value="About-Packages" >About Packages</option>
+ 		 	<option value="About-System">About Online System Issues</option>
+ 		 	<option value="About-Enrol">About Enroling  Issues</option>
+ 		 	<option value="About-Dashboard">About My Profile Dashbord</option>
+ 		 	<option value="Other">Other</option>
+
+	</select>
+
+
+    		<div class=""><label >Your Massege : </label><br></div>
+   			<textarea  name="UserMessage" placeholder="Write something.." style="height:80px" "width:560px"></textarea>
+
+   	</fieldset>
+
+   			<input class="submit" type="submit" name="Submit" value="Submit">
+   	 	</form>
+ </div>
+
+	<!------------------------------Help & Suport Form End------------------------------------>
+
+<!-----Java Script for Transition of form-Start------->
+<script>
+	
+	var x = document.getElementById("ContactUs");
+	var y = document.getElementById("Help_Suport");
+	
+
+		function ContactUs(){
+			
+		x.style.visibility= "visible";
+		y.style.visibility= "hidden";
+	
+	}
+
+	function Help_Suport(){
+
+		x.style.visibility= "hidden";
+		y.style.visibility= "visible";
+		
+	}
+
+</script>
+<!-----Java Script for Transition of form-End------->
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br
+
+
+<!--Page Content End-->
+<!--Footer-->
+<footer class="footer">
+	
+	<table  border="0px" style="width:100%">	
+			
+
+			<tr>
+  				<td><img src ="images/net.png" alt="fbicon" class="foot-icon"> Visit :www.rotafitness.lk<br>
+  					<img src ="images/call.png" alt="fbicon" class="foot-icon">Call Us : +11 254 4587<br>
+  					<img src ="images/Location.png" alt="fbicon" class="foot-icon">Location : <a href="https://goo.gl/maps/8B2rGMJgdZBQkEYG6/"> Kandy Rd,Malabe</a> <br>
+
+  				</td>
+
+
+					<td class="col1"> 
+							©All Rights Reserved.© <br>
+  	       					Rota Fitness Pvt Ltd<br>
+  							<a href="rotafitz@gmail.com">rotafitz@gmail.com</a>
+  							
+  					</td>
+
+			<td>	
+				<div id="textAlign">
+  					<p class="foots">Follow Us On  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</p>
+					<a href="https://www.facebook.com/sliit.lk/"><img src ="images/fbb.png" alt="fbicon"  width="40" height="40" > </a>
+					<a href="https://twitter.com/SLIITComputing?t=SnT3hK0oX-LJ234NYfmMzw&s=09"><img src ="images/tweeticon.png" alt="teewticon"  width="40" height="40" ></a>
+					<a href="https://instagram.com/sliit.life?igshid=YmMyMTA2M2Y="><img src ="images/insticon.png" alt="yticon"  width="45" height="40" > </a>
+				</div>
+			</td>
+		
+
+		</tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+
+
+</table>
+
+</footer>
+<!--Footer close-->
+
+</body>
+
+
+</html>

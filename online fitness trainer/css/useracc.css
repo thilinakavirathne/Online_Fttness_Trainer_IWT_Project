@@ -1,0 +1,99 @@
+#regib{
+  background-image:url(../images/fitness2.jpeg) ;
+  background-repeat: no-repeat;
+  background-size:100%;
+
+  
+  margin-left : 50px;
+  margin-bottom :0px;
+  margin-right : 50px;
+  margin-top : 0px;
+}
+
+
+input[type=find]{
+  
+  padding: 10px;
+  margin: 5px 0 10px 9px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+
+}
+#findmy{
+	background-color: #04AA6D;
+  color: white;
+  padding: 10px 0px;
+  margin: 8px 0;
+ 
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+	
+}
+#findmy:hover {
+  opacity: 1;
+}
+
+.dnic{
+  background-color:white;
+	color: black;
+}
+.font1{
+  color: red;
+  margin-left:30%;
+  margin-right: 30%;
+  background-color: white;
+	font-size: 25pX;
+}
+.form2{
+  background: none;
+  width: 50%;
+  margin-left: 10px;
+  box-shadow: 0px 0px 10px 10px white;
+}
+#submitbtn{
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+ 
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  
+}
+#submitbtn:hover {
+  opacity: 1;
+}
+.form3{
+  background:white;
+  border-radius: 10px;
+  
+  box-shadow: 10px 10px 20px 10px #ff61241f;
+  border-color: red;
+  overflow: hidden;
+  margin-right:80px;
+  margin-left: 80px;
+   opacity: 0.9;
+
+
+}
+
+.up{
+  font-size: 17px;
+  color: black;
+  border-style: groove;
+  background-color: white;
+  text-align: center;
+}
+
+
+input[type=text], input[type=password], input[type=number], input[type=nic], .area , select[id=package],  input[type=phone],input[type=date]{
+  width: 70%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}

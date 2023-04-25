@@ -1,0 +1,23 @@
+.btdiv{
+
+width: 20%;
+float:right;
+height: 140px;
+padding-bottom: 10px;
+padding-left: 100px;
+}
+
+.bt1{
+background-color:wheat;
+padding:2px 25px;
+cursor: pointer;
+border: 1px solid white;
+border-radius: 8px;
+}
+
+.maintitle {
+    padding: 50px;
+    text-align: center;
+    background-color: #101c33;
+    color: white;
+  }

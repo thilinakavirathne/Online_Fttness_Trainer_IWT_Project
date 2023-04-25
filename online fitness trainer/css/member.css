@@ -1,0 +1,68 @@
+
+.btn2{
+	padding:10px 30px 10px 30px;
+	text-align:center;
+	float:left;
+	
+
+	font-size:25px;
+	font-family:arial;
+	font-weight:bold;
+	background-color:cyan;
+	color:black;
+	cursor:pointer;
+	border-radius:15px;
+	
+}
+.btn2:hover{
+	background-color:purple;
+	color:white;
+}
+
+
+
+.mySlides {
+	display:block;
+	display: none;
+	width:100%;
+	height:900px; 
+	object-fit:cover; }
+
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  margin-top:0px;
+	margin-left:50px;
+	margin-bottom:0px;
+	margin-right:50px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin-top:0px;
+	margin-left:0px;
+	margin-bottom:0px;
+	margin-right:0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
